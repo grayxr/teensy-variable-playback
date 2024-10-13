@@ -790,11 +790,11 @@ int numberOfSamplesToUpdate;
 // they need to be different for the supplied type. e.g. it makes
 // no sense to track buffer statuses for an in-memory "file".
 template<>
-void ResamplingReader<short int,File>::resetStatus(void) {}
+void ResamplingReader<short int,File>::resetStatus(void);
 template<>
-void ResamplingReader<short int,File>::getStatus(char* buf) { strcpy(buf,"int[]"); }
+void ResamplingReader<short int,File>::getStatus(char* buf);
 template<>
-void ResamplingReader<short int,File>::triggerReload(void) {}
+void ResamplingReader<short int,File>::triggerReload(void);
 
 }
 
